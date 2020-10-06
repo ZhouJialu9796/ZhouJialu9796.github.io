@@ -1,15 +1,6 @@
 <!DOCTYPE html>
-<head><title>All Assignments</title>
-<style>
-  .container {
-        margin:10%;
-        height:370px;
-        border-style:solid;
-        border-width:.5 pixel;
-        border-color:silver;
-        border-radius: 25px;
-  }
-</style>
+<head>
+
 </head>
 <body>
   <div class='container'>
