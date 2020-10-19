@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛋糕品牌筛选</title>
+</head>
+<body>
+    
+
+<!--selector-->
+<div>
+                        <form>
+                            <select id="selecter" class="form-control" onchange="table();">
+                                <option value selected disabled>请选择品牌</option>
+                                <option value="0">好利来</option>
+                                <option value="1">巴黎贝甜</option>
+                                <option value="2">金凤成祥</option>
+                                <option value="3">面包新语</option>
+                            </select>
+                        </form>
+                        <br><br>
+<!--airtable--> <div id="table">
+    <iframe id="iframe" class="airtable-embed" src="https://airtable.com/embed/shrDl4Fu8jUTevFGj?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+</div>
+
+<br>
+<script>
+    function table(){
+    var selecter = parent.document.getElementById("selecter");
+                                if (selecter.value=="0"){document.getElementById("iframe").src="https://airtable.com/embed/shrvvqZ1CibiB41u3?backgroundColor=red&viewControls=on"};
+                                if (selecter.value=="1"){document.getElementById("iframe").src="https://airtable.com/embed/shrqdmVuCtqWHR2IY?backgroundColor=red&viewControls=on"};
+                                if (selecter.value=="2"){document.getElementById("iframe").src="https://airtable.com/embed/shrJ5TOgCs8fzccE9?backgroundColor=red&viewControls=on"};
+                                if (selecter.value=="3"){document.getElementById("iframe").src="https://airtable.com/embed/shr0YatFBcWEMI2QW?backgroundColor=red&viewControls=on"};}
+
+
+</script>
+                </div>
+
+
+<br><br><br>
+
+   
+</body>
+</html>
